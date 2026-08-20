@@ -282,8 +282,8 @@ textarea:focus-visible {
 .hero-visual { display: flex; justify-content: center; }
 .hero-photo-frame {
   position: relative;
-  width: min(450px, 78vw);
-  height: min(450px, 78vw);
+  width: min(550px, 78vw);
+  height: min(550px, 78vw);
   display: flex;
   align-items: center;
   justify-content: center;
