@@ -335,7 +335,7 @@ textarea:focus-visible {
 .chip-sql { top: 4%; left: -6%; color: var(--teal-dark); animation-delay: 0s; }
 .chip-bi { bottom: 6%; left: -14%; color: var(--coral-dark); animation-delay: 1.2s; }
 .chip-py { bottom: -2%; right: -4%; color: var(--teal-dark); animation-delay: 2.4s; }
-.chip-excel { top: 16%; right: -10%; color: var(--coral-dark); animation-delay: 3.6s; }
+.chip-excel { top: -6%; right: -8%; color: var(--coral-dark); animation-delay: 3.6s; }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
