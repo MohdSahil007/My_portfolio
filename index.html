@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohd Sahil | Data Analyst &amp; Business Intelligence Professional</title>
+  <meta name="description" content="Mohd Sahil — Data Analyst specializing in SQL, Power BI, Python and Excel. Portfolio of dashboards, data cleaning, and reporting projects.">
+  <meta name="keywords" content="Data Analyst, Power BI, SQL, Python, Business Intelligence, Data Visualization, Portfolio">
+  <meta name="author" content="Mohd Sahil">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mohd Sahil | Data Analyst Portfolio">
+  <meta property="og:description" content="Turning data into insights that drive better decisions.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (simple inline SVG monogram, no external file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230D9488'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#home" class="nav-logo">Sahil<span class="dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="assets/resume/resume.pdf" class="btn btn-primary btn-small" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <span class="corner-shape corner-shape-teal" aria-hidden="true"></span>
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <span class="shape shape-grid"></span>
+        <span class="shape shape-dot shape-dot-1"></span>
+        <span class="shape shape-dot shape-dot-2"></span>
+        <svg class="shape shape-squiggle" width="120" height="40" viewBox="0 0 120 40" fill="none"><path d="M2 20c10-18 20 18 30 0s20-18 30 0 20 18 30 0 20-18 26 0" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 10"/></svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Namaste. 👋 I'm a Data Analyst</p>
+          <h1 class="hero-title">Turning Data Into <em>Insights</em> That Drive Better Decisions.</h1>
+          <p class="hero-intro">
+            I'm Mohd Sahil, a detail-oriented Data Analyst with hands-on experience in data validation,
+            reporting, and operational data management. Skilled in SQL, Power BI, Python (Pandas, NumPy),
+            and Advanced Excel — I build dashboards that turn raw data into clear, actionable insight.
+          </p>
+          <div class="hero-actions">
+            <a href="assets/resume/resume.pdf" class="btn btn-primary" download><span aria-hidden="true">⭳</span> Download Resume</a>
+            <a href="#projects" class="btn btn-outline">View Projects <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-meta">
+            <span>📍 Noida, Uttar Pradesh, India</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-photo-frame">
+            <span class="frame-blob frame-blob-teal" aria-hidden="true"></span>
+            <span class="frame-blob frame-blob-coral" aria-hidden="true"></span>
+            <img src="assets/images/profile.png" alt="Portrait of Mohd Sahil, Data Analyst" class="hero-photo" width="440" height="440">
+            <span class="chip chip-sql" aria-hidden="true">SQL</span>
+            <span class="chip chip-bi" aria-hidden="true">Power BI</span>
+            <span class="chip chip-py" aria-hidden="true">Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KPI / STATS (floating card) ===================== -->
+    <section class="stats" aria-label="Career statistics">
+      <div class="container">
+        <div class="stats-card reveal">
+          <div class="stat-item">
+            <span class="stat-dot dot-coral" aria-hidden="true"></span>
+            <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Years of Experience</p>
+          </div>
+          <span class="stat-divider" aria-hidden="true"></span>
+          <div class="stat-item">
+            <span class="stat-dot dot-teal" aria-hidden="true"></span>
+            <span class="stat-number" data-count="3">0</span>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+          <span class="stat-divider" aria-hidden="true"></span>
+          <div class="stat-item">
+            <span class="stat-dot dot-coral" aria-hidden="true"></span>
+            <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Analytics Tools</p>
+          </div>
+          <span class="stat-divider" aria-hidden="true"></span>
+          <div class="stat-item">
+            <span class="stat-dot dot-teal" aria-hidden="true"></span>
+            <span class="stat-number" data-count="4">0</span>
+            <p class="stat-label">Certifications</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+      <span class="corner-shape corner-shape-coral" aria-hidden="true"></span>
+      <div class="container about-grid">
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="about-shape-block">
+            <div class="mini-card">🗂️ Data Cleaning</div>
+            <div class="mini-card mini-card-offset">📊 Dashboards</div>
+            <div class="mini-card">🔎 Validation</div>
+            <div class="mini-card mini-card-offset">📈 Reporting</div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 class="section-title">Background &amp; Strengths</h2>
+          <p class="about-text">
+            I currently work as a GIS Engineer with a Data Analysis focus at Risk Management Solutions, Inc. (RMSI),
+            where I extract, clean, and validate geographic and operational data from multiple sources, and prepare
+            daily, weekly, and monthly reports for project monitoring. Before that, I managed inventory records,
+            stock movement, and reconciliation for a fruit trading company — work that sharpened my eye for
+            accuracy and structured record-keeping.
+          </p>
+          <p class="about-text">
+            Backed by a B.Com degree and a Data Analytics Diploma, I've built hands-on skills in SQL, Power BI,
+            Python, and Advanced Excel through academic and personal dashboard projects. I'm passionate about
+            solving business problems through data and eager to contribute analytical skills to business
+            intelligence and data-driven decision-making.
+          </p>
+          <ul class="strength-tags">
+            <li>Data Validation</li>
+            <li>Dashboard Design</li>
+            <li>Report Automation</li>
+            <li>Statistical Analysis</li>
+            <li>Data Cleaning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <p class="eyebrow center">Skills</p>
+        <h2 class="section-title center">What I Work With</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">📊</div>
+            <h3>BI &amp; Visualization</h3>
+            <ul class="skill-list">
+              <li>Power BI</li>
+              <li>Microsoft Excel</li>
+              <li>Data Visualization</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">🗄️</div>
+            <h3>Databases</h3>
+            <ul class="skill-list">
+              <li>SQL</li>
+              <li>SQL Server</li>
+              <li>MySQL</li>
+              <li>DBMS</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">🐍</div>
+            <h3>Python for Data Analysis</h3>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">🧮</div>
+            <h3>Data Management</h3>
+            <ul class="skill-list">
+              <li>Data Cleaning &amp; Preparation</li>
+              <li>Report Automation</li>
+              <li>Statistical Analysis</li>
+              <li>Google Sheets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <p class="eyebrow center">Projects</p>
+        <h2 class="section-title center">Dashboards &amp; Analysis Work</h2>
+
+        <div class="project-list">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <div class="project-placeholder" role="img" aria-label="Placeholder for Interactive Sales Performance Dashboard screenshot">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg>
+                <span>Add project-1.jpg</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-year">2024</span>
+              <h3>Interactive Sales Performance Dashboard</h3>
+              <p class="project-problem"><strong>Business problem:</strong> Business units needed a single, real-time view of sales performance and regional trends instead of static reports.</p>
+              <p class="project-detail"><strong>What I did:</strong> Designed and developed an interactive Power BI dashboard tracking sales performance, regional trends, and KPIs across multiple business units.</p>
+              <p class="project-insight"><strong>Key insight:</strong> Enabled stakeholders to monitor metrics in real time, replacing manual, delayed reporting.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Power BI</span>
+                <span class="tool-tag">DAX-based Reports</span>
+                <span class="tool-tag">Excel</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MohdSahil007/" class="btn btn-outline btn-small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <div class="project-placeholder" role="img" aria-label="Placeholder for Call Center Performance and Churn Analysis Dashboard screenshot">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3v18h18"/><path d="M4 16l4-5 4 3 4-7 4 4"/></svg>
+                <span>Add project-2.jpg</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-year">2024</span>
+              <h3>Call Center Performance &amp; Churn Analysis Dashboard</h3>
+              <p class="project-problem"><strong>Business problem:</strong> Rising churn needed to be tracked alongside call center KPIs to spot improvement opportunities early.</p>
+              <p class="project-detail"><strong>What I did:</strong> Developed a comprehensive call center performance dashboard monitoring key metrics and churn rates.</p>
+              <p class="project-insight"><strong>Key insight:</strong> Analyzed trends to identify specific improvement opportunities for reducing churn.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Power BI</span>
+                <span class="tool-tag">Python</span>
+                <span class="tool-tag">SQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MohdSahil007/" class="btn btn-outline btn-small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-media">
+              <div class="project-placeholder" role="img" aria-label="Placeholder for TCS Stock Market Analysis Dashboard screenshot">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3v18h18"/><path d="M4 14l3-4 3 2 3-6 3 3 4-5"/><circle cx="7" cy="10" r="1"/><circle cx="10" cy="12" r="1"/><circle cx="13" cy="6" r="1"/></svg>
+                <span>Add project-3.jpg</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-year">2024</span>
+              <h3>TCS Stock Market Analysis Dashboard</h3>
+              <p class="project-problem"><strong>Business problem:</strong> Tracking financial and market indicators required a clear, visual analysis tool rather than raw spreadsheets.</p>
+              <p class="project-detail"><strong>What I did:</strong> Created a sophisticated stock analysis dashboard with advanced visualization techniques.</p>
+              <p class="project-insight"><strong>Key insight:</strong> Tracked financial metrics and market indicators in a format built for quick, confident reading.</p>
+              <div class="project-tools">
+                <span class="tool-tag">Power BI</span>
+                <span class="tool-tag">Excel</span>
+                <span class="tool-tag">Statistical Analysis</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MohdSahil007/" class="btn btn-outline btn-small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <p class="eyebrow center">Experience</p>
+        <h2 class="section-title center">Where I've Worked</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">Feb 2024 – Present</span>
+              <h3>GIS Engineer (Data Analysis Focus)</h3>
+              <p class="timeline-company">Risk Management Solutions, Inc. (RMSI) · Noida, India</p>
+              <ul>
+                <li>Extract, clean, and validate geographic and operational data from multiple sources for analysis.</li>
+                <li>Prepare, organize, and validate structured datasets for analysis and reporting; ensure data quality and consistency.</li>
+                <li>Prepare daily, weekly, and monthly operational reports, ensuring timely delivery and accuracy for project monitoring.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <span class="timeline-date">Apr 2022 – Dec 2023</span>
+              <h3>Inventory Executive (Part-Time)</h3>
+              <p class="timeline-company">SFC Fruit Co. · India</p>
+              <ul>
+                <li>Maintained inventory records and monitored daily stock movement to ensure accurate inventory tracking.</li>
+                <li>Recorded and updated purchase, sales, and stock transactions using Microsoft Excel and company records.</li>
+                <li>Performed stock verification and reconciled inventory discrepancies to maintain data accuracy.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="certifications" id="certifications">
+      <div class="container">
+        <p class="eyebrow center">Certifications</p>
+        <h2 class="section-title center">Verified Credentials</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card reveal">
+            <div class="cert-badge">IBM</div>
+            <h3>IBM Certified – SQL</h3>
+            <p class="cert-issuer">Issued by IBM</p>
+            <div class="project-tools">
+              <span class="tool-tag">SQL</span>
+              <span class="tool-tag">Databases</span>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-badge">PwC</div>
+            <h3>Power BI Certification</h3>
+            <p class="cert-issuer">Issued by PwC</p>
+            <div class="project-tools">
+              <span class="tool-tag">Power BI</span>
+              <span class="tool-tag">Dashboards</span>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-badge">MC</div>
+            <h3>Python Programming Certification</h3>
+            <p class="cert-issuer">Issued by Motion Cut</p>
+            <div class="project-tools">
+              <span class="tool-tag">Python</span>
+              <span class="tool-tag">Pandas / NumPy</span>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-badge">TCS</div>
+            <h3>Data Analysis Certification</h3>
+            <p class="cert-issuer">Issued by TCS</p>
+            <div class="project-tools">
+              <span class="tool-tag">Data Analysis</span>
+              <span class="tool-tag">Statistics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+      <span class="corner-shape corner-shape-teal" aria-hidden="true"></span>
+      <div class="container contact-inner">
+        <p class="eyebrow center">Contact</p>
+        <h2 class="section-title center">Let's Turn Your Data Into Meaningful Insights.</h2>
+        <p class="contact-sub">Open to Data Analyst and Business Intelligence opportunities — reach out any time.</p>
+
+        <div class="contact-grid">
+          <div class="contact-links reveal">
+            <a href="mailto:sahilofficial681@gmail.com" class="contact-link">
+              <span aria-hidden="true">✉️</span> sahilofficial681@gmail.com
+            </a>
+            <a href="tel:+919927330690" class="contact-link">
+              <span aria-hidden="true">📞</span> +91 9927330690
+            </a>
+            <a href="https://www.linkedin.com/in/mohd-sahil-ab42892b3" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">🔗</span> LinkedIn Profile
+            </a>
+            <a href="https://github.com/MohdSahil007/" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">💻</span> GitHub Profile
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-row">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-row">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Mohd Sahil</p>
+        <p class="footer-role">Data Analyst | Business Intelligence | SQL | Power BI</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/mohd-sahil-ab42892b3" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/MohdSahil007/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="mailto:sahilofficial681@gmail.com" aria-label="Email">Email</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Mohd Sahil. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
