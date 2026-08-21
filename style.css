@@ -870,7 +870,7 @@ section { padding: 100px 0; }
 .watermark-dots {
   background-image: radial-gradient(var(--teal) 1.6px, transparent 1.6px);
   background-size: 28px 28px;
-  opacity: 0.05;
+  opacity: 0.07;
   mask-image: radial-gradient(ellipse 60% 50% at 30% 40%, black 40%, transparent 80%);
   -webkit-mask-image: radial-gradient(ellipse 60% 50% at 30% 40%, black 40%, transparent 80%);
 }
