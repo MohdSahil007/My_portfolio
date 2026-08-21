@@ -87,6 +87,8 @@ textarea:focus-visible {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 24px;
+  position: relative;
+  z-index: 1;
 }
 
 /* ===================== BUTTONS ===================== */
@@ -483,7 +485,7 @@ section { padding: 100px 0; }
 }
 
 /* ===================== SKILLS ===================== */
-.skills { background: var(--surface); }
+.skills { background: var(--surface); position: relative; overflow: hidden; }
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -526,6 +528,7 @@ section { padding: 100px 0; }
 .skill-list li:last-child { border-bottom: none; }
 
 /* ===================== PROJECTS ===================== */
+.projects { position: relative; overflow: hidden; }
 .project-list {
   display: flex;
   flex-direction: column;
@@ -602,7 +605,7 @@ section { padding: 100px 0; }
 .project-actions { margin-top: 16px; }
 
 /* ===================== EXPERIENCE (TIMELINE) ===================== */
-.experience { background: var(--surface); }
+.experience { background: var(--surface); position: relative; overflow: hidden; }
 .timeline {
   position: relative;
   max-width: 760px;
@@ -660,6 +663,7 @@ section { padding: 100px 0; }
 }
 
 /* ===================== CERTIFICATIONS ===================== */
+.certifications { position: relative; overflow: hidden; }
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -850,4 +854,72 @@ section { padding: 100px 0; }
   .chip-sql { left: -4%; }
   .chip-bi { left: -6%; }
   .chip-py { right: -2%; }
+}
+
+/* =========================================================
+   SECTION WATERMARKS — subtle full-section background charts
+   ========================================================= */
+.watermark {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.watermark-dots {
+  background-image: radial-gradient(var(--teal) 1.6px, transparent 1.6px);
+  background-size: 28px 28px;
+  opacity: 0.07;
+  mask-image: radial-gradient(ellipse 60% 50% at 30% 40%, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 50% at 30% 40%, black 40%, transparent 80%);
+}
+
+.watermark-skyline {
+  bottom: -6%;
+  left: 0;
+  right: 0;
+  height: 160px;
+  top: auto;
+  opacity: 0.05;
+}
+.watermark-skyline svg { width: 100%; height: 100%; display: block; }
+
+.watermark-area {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 320px;
+  bottom: auto;
+  opacity: 0.06;
+}
+.watermark-area svg { width: 100%; height: 100%; display: block; }
+
+.watermark-lines {
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--teal) 0px,
+    var(--teal) 1.5px,
+    transparent 1.5px,
+    transparent 34px
+  );
+  opacity: 0.05;
+  mask-image: linear-gradient(to left, black, transparent 70%);
+  -webkit-mask-image: linear-gradient(to left, black, transparent 70%);
+}
+
+.watermark-rings {
+  top: -8%;
+  right: -6%;
+  width: 480px;
+  height: 480px;
+  left: auto;
+  bottom: auto;
+  opacity: 0.08;
+}
+.watermark-rings svg { width: 100%; height: 100%; display: block; }
+
+@media (max-width: 780px) {
+  .watermark-skyline, .watermark-area, .watermark-rings { opacity: 0.045; }
+  .watermark-rings { width: 320px; height: 320px; }
 }
